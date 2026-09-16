@@ -1,15 +1,13 @@
-// Replace these with Matadantelinga's real contact details.
-export const CONTACT = {
-  email: "hello@Matadantelinga.dev",
-  whatsapp: "https://wa.me/6280000000000",
-  linkedin: "https://linkedin.com/in/Matadantelinga",
-  github: "https://github.com/Matadantelinga",
-};
+export interface Service {
+  index: string;
+  title: string;
+  description: string;
+}
 
-export const SERVICES = [
+export const SERVICES: Service[] = [
   {
     index: "01",
-    title: "Web Applications",
+    title: "Frontend & Designer",
     description:
       "End-to-end product builds — from architecture to polished interface — using Next.js and TypeScript.",
   },
@@ -36,5 +34,11 @@ export const SERVICES = [
     title: "API & Frontend Integration",
     description:
       "Connecting frontend experiences to REST APIs with clean data flow and sensible state management.",
+  },
+  {
+    index: "06",
+    title: "Mobile App Development",
+    description:
+      "Cross-platform apps with React Native, hybrid builds with Ionic, and fully native performance with Flutter.",
   },
 ];

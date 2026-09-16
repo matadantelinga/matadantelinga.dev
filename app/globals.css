@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F7F5;
+  color: #111111;
+}
+
+::selection {
+  background-color: #426BFF;
+  color: #FFFFFF;
+}
+
+.container-edit {
+  @apply mx-auto w-full max-w-content px-6 md:px-10 lg:px-16;
+}
+
+.label-meta {
+  @apply text-xs uppercase tracking-[0.18em] text-secondary;
+}
+
+.underline-blue {
+  background-image: linear-gradient(#E9EEFF, #E9EEFF);
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  background-position: 0 88%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* horizontal-scroll safety */
+html, body {
+  overflow-x: hidden;
+}

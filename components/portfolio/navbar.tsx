@@ -32,7 +32,7 @@ export function Navbar() {
               href={link.href}
               className={cn(
                 "text-xs uppercase tracking-[0.14em] text-secondary hover:text-ink transition-colors",
-                pathname === link.href && "text-ink"
+                pathname === link.href && "text-ink",
               )}
             >
               {link.label}
@@ -43,7 +43,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-blue" />
           <span className="text-[11px] uppercase tracking-[0.14em] text-secondary">
-            Available for freelance
+            Open to New Projects
           </span>
         </div>
 
@@ -81,7 +81,7 @@ export function Navbar() {
               <div className="flex items-center gap-2 pt-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-blue" />
                 <span className="text-[11px] uppercase tracking-[0.14em] text-secondary">
-                  Available for freelance
+                  Open to New Projects
                 </span>
               </div>
             </div>

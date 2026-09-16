@@ -9,7 +9,11 @@ const line = {
   hidden: { y: "110%" },
   visible: (i: number) => ({
     y: 0,
-    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.15 + i * 0.08 },
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+      delay: 0.15 + i * 0.08,
+    },
   }),
 };
 
@@ -58,12 +62,16 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.75, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{
+              delay: 0.75,
+              duration: 0.6,
+              ease: [0.22, 1, 0.36, 1],
+            }}
             className="mt-6 flex items-center gap-2"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-blue animate-pulse" />
             <span className="text-[11px] uppercase tracking-[0.14em] text-secondary">
-              Available for freelance
+              Open to New Projects
             </span>
           </motion.div>
 
@@ -116,7 +124,7 @@ export function Hero() {
             </div>
 
             <div className="absolute -bottom-5 left-4 bg-blue text-white text-[10px] uppercase tracking-[0.14em] px-3 py-2">
-              Available for freelance
+              Open to New Projects
             </div>
           </motion.div>
         </div>

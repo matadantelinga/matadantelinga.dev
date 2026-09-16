@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { ProjectList } from "@/components/portfolio/project-list";
 
 export const metadata: Metadata = {
-  title: "Selected Work — Suteja",
-  description: "A selection of products, interfaces and systems designed and built by Suteja.",
+  title: "Selected Work — Matadantelinga",
+  description:
+    "A selection of products, interfaces and systems designed and built by Matadantelinga.",
 };
 
 export default function WorkPage() {
@@ -15,8 +16,8 @@ export default function WorkPage() {
         WORK
       </h1>
       <p className="mt-6 text-secondary max-w-md text-lg">
-        A selection of products, interfaces and systems I&apos;ve designed
-        and built.
+        A selection of products, interfaces and systems I&apos;ve designed and
+        built.
       </p>
 
       <div className="mt-16">

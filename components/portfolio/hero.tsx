@@ -112,7 +112,7 @@ export function Hero() {
             <div className="relative overflow-hidden bg-white border border-border">
               <Image
                 src="/images/profile.jpg"
-                alt="Portrait of Suteja, Frontend / Full-Stack Developer"
+                alt="Portrait of Matadantelinga, Frontend / Full-Stack Developer"
                 width={1043}
                 height={1405}
                 priority

@@ -4,13 +4,12 @@ import { Navbar } from "@/components/portfolio/navbar";
 import { Footer } from "@/components/portfolio/footer";
 
 export const metadata: Metadata = {
-  title: "Suteja — Frontend / Full-Stack Developer",
+  title: "Matadantelinga — Frontend Developer & Digital Designer",
   description:
-    "Suteja is a frontend / full-stack developer building digital products that feel right — with React, Next.js and TypeScript.",
+    "Matadantelinga is building digital products that feel right — with React, Next.js, Angular and TypeScript.",
   openGraph: {
-    title: "Suteja — Frontend / Full-Stack Developer",
-    description:
-      "Suteja is a frontend / full-stack developer building digital products that feel right.",
+    title: "Matadantelinga — Frontend Developer & Digital Designer",
+    description: "Matadantelinga is building digital products that feel right",
     images: ["/images/profile.jpg"],
   },
 };

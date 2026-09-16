@@ -1,4 +1,4 @@
-# Suteja — Personal Developer Portfolio
+# Matadantelinga — Personal Developer Portfolio
 
 A premium, editorial personal portfolio built with Next.js (App Router), TypeScript, Tailwind CSS, and Framer Motion.
 

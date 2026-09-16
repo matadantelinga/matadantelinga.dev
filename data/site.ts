@@ -1,9 +1,9 @@
-// Replace these with Suteja's real contact details.
+// Replace these with Matadantelinga's real contact details.
 export const CONTACT = {
-  email: "hello@suteja.dev",
+  email: "hello@Matadantelinga.dev",
   whatsapp: "https://wa.me/6280000000000",
-  linkedin: "https://linkedin.com/in/suteja",
-  github: "https://github.com/suteja",
+  linkedin: "https://linkedin.com/in/Matadantelinga",
+  github: "https://github.com/Matadantelinga",
 };
 
 export const SERVICES = [

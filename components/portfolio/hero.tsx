@@ -54,8 +54,10 @@ export function Hero() {
             transition={{ delay: 0.6, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 max-w-md space-y-1"
           >
-            <p className="text-ink">Frontend / Full-Stack Developer</p>
-            <p className="text-secondary">React · Next.js · TypeScript</p>
+            <p className="text-ink">Frontend & Designer</p>
+            <p className="text-secondary">
+              React · Next.js · Angular · TypeScript
+            </p>
             <p className="text-secondary">Based in Indonesia</p>
           </motion.div>
 
@@ -112,7 +114,7 @@ export function Hero() {
             <div className="relative overflow-hidden bg-white border border-border">
               <Image
                 src="/images/profile.jpg"
-                alt="Portrait of Matadantelinga, Frontend / Full-Stack Developer"
+                alt="Portrait of Matadantelinga, Frontend & Designer"
                 width={1043}
                 height={1405}
                 priority

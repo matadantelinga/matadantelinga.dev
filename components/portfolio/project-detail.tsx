@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-import type { Project } from "@/data/projects";
 import { getAdjacentProjects } from "@/data/projects";
+import { iProject } from "@/lib/interfaces/project";
 
-export function ProjectDetail({ project }: { project: Project }) {
+export function ProjectDetail({ project }: { project: iProject }) {
   const { prev, next } = getAdjacentProjects(project.slug);
 
   return (
@@ -22,7 +22,9 @@ export function ProjectDetail({ project }: { project: Project }) {
         <h1 className="mt-3 text-4xl md:text-6xl font-medium tracking-tight leading-[0.98] max-w-3xl">
           {project.title.toUpperCase()}
         </h1>
-        <p className="mt-6 text-secondary max-w-xl text-lg">{project.description}</p>
+        <p className="mt-6 text-secondary max-w-xl text-lg">
+          {project.description}
+        </p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-14 border-t border-border pt-8">
           <div>
@@ -46,7 +48,12 @@ export function ProjectDetail({ project }: { project: Project }) {
 
       <section className="container-edit pb-20">
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-white border border-border">
-          <Image src={project.coverImage} alt={project.title} fill className="object-cover" />
+          <Image
+            src={project.coverImage}
+            alt={project.title}
+            fill
+            className="object-cover"
+          />
         </div>
       </section>
 
@@ -76,12 +83,25 @@ export function ProjectDetail({ project }: { project: Project }) {
         </h2>
         <div className="space-y-6">
           <div className="relative aspect-[16/9] w-full overflow-hidden bg-white border border-border">
-            <Image src={project.coverImage} alt={`${project.title} overview`} fill className="object-cover" />
+            <Image
+              src={project.coverImage}
+              alt={`${project.title} overview`}
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {project.images.map((img) => (
-              <div key={img} className="relative aspect-[4/3] overflow-hidden bg-white border border-border">
-                <Image src={img} alt={project.title} fill className="object-cover" />
+              <div
+                key={img}
+                className="relative aspect-[4/3] overflow-hidden bg-white border border-border"
+              >
+                <Image
+                  src={img}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
             ))}
           </div>
@@ -112,22 +132,35 @@ export function ProjectDetail({ project }: { project: Project }) {
 
       <section className="container-edit py-14 border-t border-border flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         {prev ? (
-          <Link href={`/work/${prev.slug}`} className="group flex items-center gap-3 text-sm uppercase tracking-[0.14em] hover:text-blue transition-colors">
+          <Link
+            href={`/work/${prev.slug}`}
+            className="group flex items-center gap-3 text-sm uppercase tracking-[0.14em] hover:text-blue transition-colors"
+          >
             <ArrowLeft className="w-4 h-4" />
             Previous Project
           </Link>
-        ) : <span />}
+        ) : (
+          <span />
+        )}
 
-        <Link href="/work" className="text-sm uppercase tracking-[0.14em] text-secondary hover:text-blue transition-colors">
+        <Link
+          href="/work"
+          className="text-sm uppercase tracking-[0.14em] text-secondary hover:text-blue transition-colors"
+        >
           Back to All Work
         </Link>
 
         {next ? (
-          <Link href={`/work/${next.slug}`} className="group flex items-center gap-3 text-sm uppercase tracking-[0.14em] hover:text-blue transition-colors">
+          <Link
+            href={`/work/${next.slug}`}
+            className="group flex items-center gap-3 text-sm uppercase tracking-[0.14em] hover:text-blue transition-colors"
+          >
             Next Project
             <ArrowRight className="w-4 h-4" />
           </Link>
-        ) : <span />}
+        ) : (
+          <span />
+        )}
       </section>
     </article>
   );

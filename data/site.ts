@@ -1,10 +1,13 @@
-export interface Service {
-  index: string;
-  title: string;
-  description: string;
-}
+import { iService } from "@/lib/interfaces/service";
 
-export const SERVICES: Service[] = [
+export const CONTACT = {
+  email: "hello@suteja.dev",
+  whatsapp: "https://wa.me/6280000000000",
+  linkedin: "https://linkedin.com/in/suteja",
+  github: "https://github.com/suteja",
+};
+
+export const SERVICES: iService[] = [
   {
     index: "01",
     title: "Frontend & Designer",

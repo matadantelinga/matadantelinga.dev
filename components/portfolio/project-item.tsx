@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import type { Project } from "@/data/projects";
+import { iProject } from "@/lib/interfaces/project";
 
-export function ProjectItem({ project }: { project: Project }) {
+export function ProjectItem({ project }: { project: iProject }) {
   return (
     <Link href={`/work/${project.slug}`} className="block group">
       <motion.div

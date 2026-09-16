@@ -1,19 +1,6 @@
-export interface Project {
-  slug: string;
-  index: string;
-  title: string;
-  description: string;
-  problem: string;
-  approach: string[];
-  role: string[];
-  year: string;
-  type: string;
-  technologies: string[];
-  coverImage: string;
-  images: string[];
-}
+import { iProject } from "@/lib/interfaces/project";
 
-export const projects: Project[] = [
+export const projects: iProject[] = [
   {
     slug: "admin-platform",
     index: "01",
@@ -38,7 +25,14 @@ export const projects: Project[] = [
     ],
     year: "2026",
     type: "Web Application",
-    technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS", "shadcn/ui", "REST API"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "REST API",
+    ],
     coverImage: "/projects/project-01-cover.jpg",
     images: ["/projects/project-01-01.jpg", "/projects/project-01-02.jpg"],
   },
@@ -48,8 +42,7 @@ export const projects: Project[] = [
     title: "E-Commerce Platform",
     description:
       "A modern commerce experience focused on simplicity and conversion.",
-    problem:
-      "Placeholder — replace with the real problem this product solved.",
+    problem: "Placeholder — replace with the real problem this product solved.",
     approach: [
       "Placeholder — describe the architecture decisions.",
       "Placeholder — describe the UX decisions around browsing and checkout.",
@@ -65,7 +58,13 @@ export const projects: Project[] = [
     ],
     year: "2025",
     type: "Web Application",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "REST API"],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "REST API",
+    ],
     coverImage: "/projects/project-02-cover.jpg",
     images: ["/projects/project-02-01.jpg", "/projects/project-02-02.jpg"],
   },
@@ -75,8 +74,7 @@ export const projects: Project[] = [
     title: "Booking Platform",
     description:
       "A streamlined booking system built for clarity and speed across devices.",
-    problem:
-      "Placeholder — replace with the real problem this product solved.",
+    problem: "Placeholder — replace with the real problem this product solved.",
     approach: [
       "Placeholder — describe the architecture decisions.",
       "Placeholder — describe the UX decisions around the booking flow.",
@@ -84,7 +82,11 @@ export const projects: Project[] = [
       "Placeholder — describe API integration and data-fetching approach.",
       "Placeholder — describe state management decisions.",
     ],
-    role: ["Frontend Development", "UI Implementation", "Responsive Development"],
+    role: [
+      "Frontend Development",
+      "UI Implementation",
+      "Responsive Development",
+    ],
     year: "2025",
     type: "Web Application",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],

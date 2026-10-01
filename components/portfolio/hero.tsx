@@ -111,7 +111,7 @@ export function Hero() {
             {/* blue accent shape behind photo */}
             <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 bg-blue-light -z-10" />
 
-            <div className="relative overflow-hidden bg-white border border-border">
+            {/* <div className="relative overflow-hidden bg-white border border-border">
               <Image
                 src="/images/profile.jpg"
                 alt="Portrait of Matadantelinga, Frontend & Designer"
@@ -120,14 +120,14 @@ export function Hero() {
                 priority
                 className="w-full h-auto object-cover grayscale-[0.06]"
               />
-              {/* subtle blue tint overlay to tie photo into palette */}
               <div className="pointer-events-none absolute inset-0 bg-blue mix-blend-multiply opacity-[0.05]" />
               <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-black/5" />
             </div>
-
+          
             <div className="absolute -bottom-5 left-4 bg-blue text-white text-[10px] uppercase tracking-[0.14em] px-3 py-2">
               Open to New Projects
             </div>
+              */}
           </motion.div>
         </div>
       </div>
